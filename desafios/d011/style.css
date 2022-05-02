@@ -14,17 +14,6 @@ body {
     
 }
 
-pre {
-    margin-left: -70px;
-}
-
-div.fundo-flor {
-    background-image: url(imagens/background001.jpg);
-    background-position: center center;
-    color: #ffffff;
-    padding: 5px;
-}
-
 footer {
     background-color: #000000;
     color: #ffffff;
