@@ -9,14 +9,23 @@
         table {
             border-collapse: collapse;
             width: 80vw;
+            position: relative;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #686868;
         }
         th, td {
             border: 1px solid #000000;
             padding: 15px;
         }
-        th {
+        thead, tfoot {
 
-            background-color: #00488b1a;
+            background-color: #686868;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: #d3d3d3;
         }
         td {
             text-align: center;
@@ -41,12 +50,12 @@
     <table>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Unidade Federativa</th>
-                <th>População <br> (2010)</th>
-                <th>População <br> (2021)</th>
-                <th>Mudança</th>
-                <th>% da pop. total</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col">População <br> (2010)</th>
+                <th scope="col">População <br> (2021)</th scope="col">
+                <th scope="col">Mudança</th>
+                <th scope="col">% da pop. total</th>
             </tr>
         </thead>
         <tbody>
@@ -76,10 +85,31 @@
                 <td class="mudanca">+9.21%</td>
                 <td>8,2%</td>
             </tr>
+            <tr>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>10</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td id="total-de-habitantes"></td>
             </tr>
         </tfoot>
